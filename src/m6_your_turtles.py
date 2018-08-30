@@ -38,10 +38,10 @@ blue_t.speed = 20
 red_t = rg.SimpleTurtle('turtle')
 red_t.pen = rg.Pen('red', 10)
 red_t.speed = 20
-size1 = 10
-size2 = 100
+size1 = 100
+size2 = 50
 
-for k in range(9)
+for k in range(9):
 
     blue_t.draw_circle(size2)
     red_t.draw_square(size1)
@@ -49,4 +49,16 @@ for k in range(9)
     blue_t.pen_up()
     blue_t.right(45)
     blue_t.forward(10)
-    blue_t.left(45)
+
+    red_t.pen_up()
+    red_t.right(45)
+    red_t.forward(10)
+
+    blue_t.pen_down()
+    size2 = size2 - 5
+
+    red_t.pen_down()
+    size1 = size1 - 10
+
+window.close_on_mouse_click()
+
