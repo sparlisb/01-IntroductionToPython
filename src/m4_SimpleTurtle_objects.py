@@ -10,11 +10,11 @@ Also:
   -- ASSIGNING a VALUE to a NAME (VARIABLE).
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Shamus_Sparling.
 """
 ###############################################################################
 #
-# TODO: 1.
+# done: 1.
 #   Yes, that means for YOU to DO things per the following instructions:
 #
 #   On Line 13 above, replace  PUT_YOUR_OWN_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 2.
+# done: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# done: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving, *click anywhere in the window to close it*.
 #
@@ -92,6 +92,10 @@ boris = rg.SimpleTurtle()
 boris.forward(100)
 boris.left(90)
 boris.forward(200)
+boris.left(90)
+boris.forward(100)
+boris.left(45)
+boris.forward(150)
 
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
@@ -105,13 +109,15 @@ natasha.speed = 10  # Faster
 natasha.backward(50)
 natasha.right(90)
 natasha.forward(50)
+natasha.right(45)
+natasha.forward(75)
 
 natasha.speed = 1  # Now slower
 natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# done: 4.
 #   Add a few more lines of your own code to make one of the
 #   existing SimpleTurtles move some more and/or have different
 #   characteristics.
@@ -125,7 +131,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 5.
+# done: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -150,9 +156,16 @@ natasha.go_to(rg.Point(-100, 200))
 #
 ###############################################################################
 
+sam = rg.SimpleTurtle()
+sam.pen = rg.Pen('blue', 4)
+sam.speed = 5
+sam.backward(25)
+sam.right(135)
+sam.forward(50)
+
 ###############################################################################
 #
-# TODO: 6.
+# done: 6.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
